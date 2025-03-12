@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1 id="title">BEST ICE CREAM TYPE</h1>
+    <p id="description">Choose your best</p>
+    <form id="survey-form">
+        <div>
+            <label for="name-label">
+                <input id="name-label" name="name" type="text" required placeholder="Name" />
+            </label>
+        </div>
+        <div>
+            <label for="email-label">
+                <input id="email-label" name="e-mail" required placeholder="E-mail" />
+            </label>
+        </div>
+        <div>
+            <label for="number-label">
+                <input id="number-label" name="number" min="8" max="30" placeholder="Number" />
+            </label>
+        </div>
+        <div>
+            <label for="dropdown">Choose Your Best Favor
+                <select id="dropdown" name="dropdown">
+                    <option value="">(Select Option)</option>
+                    <option value="1">Vanillia</option>
+                    <option value="2">Chocolate</option>
+                    <option value="3">Strawberry</option>
+                    <option value="4">Others</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <legend>Choose your best bottom type</legend>
+            <label for="cone"><input id="cone" type="radio" name="cone" class="inline" checked /> Cone</label>
+            <label for="bowl"><input id="bowl" type="radio" name="bowl" class="inline" /> Bowl</label>
+        </div>
+        <div>
+            <p>Choose Your Best Brands</p>
+            <label><input type="checkbox" />Magnum</label>
+            <label><input type="checkbox" />Cornetto</label>
+            <label><input type="checkbox" />Bravo</label>
+            <label><input type="checkbox" />Algida</label>
+        </div>
+        <div>
+            <label for="others">
+                <textarea id="others" />
+            </label>
+        </div>
+
+    </form>
+</body>
+
+</html>
