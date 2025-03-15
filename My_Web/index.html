@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
     <h1 id="title">BEST ICE CREAM TYPE</h1>
     <p id="description">Choose your best</p>
     <form id="survey-form">
         <div>
-            <label for="name-label">
-                <input id="name-label" name="name" type="text" required placeholder="Name" />
+            <label id="name-label" for="name">Name:
+                <input id="name" name="name" type="text" required placeholder="Name" />
             </label>
         </div>
         <div>
-            <label for="email-label">
-                <input id="email-label" name="e-mail" required placeholder="E-mail" />
+            <label id="email-label" for="email">E-mail:
+                <input id="email" name="e-mail" required placeholder="E-mail" type="email" />
             </label>
         </div>
         <div>
-            <label for="number-label">
-                <input id="number-label" name="number" min="8" max="30" placeholder="Number" />
+            <label id="number-label">Number:
+                <input id="number" name="number" min="8" max="30" placeholder="Number" descendant="survey-form"
+                    type="number" />
             </label>
         </div>
         <div>
@@ -33,20 +38,32 @@
         </div>
         <div>
             <legend>Choose your best bottom type</legend>
-            <label for="cone"><input id="cone" type="radio" name="cone" class="inline" checked /> Cone</label>
-            <label for="bowl"><input id="bowl" type="radio" name="bowl" class="inline" /> Bowl</label>
+            <label for="cone"><input id="cone" type="radio" name="bottom-type" class="inline" checked value="cone" />
+                Cone</label>
+            <label for="bowl"><input id="bowl" type="radio" name="bottom-type" class="inline" value="bowl" />
+                Bowl</label>
+        </div>
+        <div>
+            <legend>Choose your best place</legend>
+            <label for="home"><input id="home" type="radio" name="place" class="inline" checked value="home" />
+                Home</label>
+            <label for="street"><input id="street" type="radio" name="place" class="inline" value="street" />
+                Street</label>
         </div>
         <div>
             <p>Choose Your Best Brands</p>
-            <label><input type="checkbox" />Magnum</label>
-            <label><input type="checkbox" />Cornetto</label>
-            <label><input type="checkbox" />Bravo</label>
-            <label><input type="checkbox" />Algida</label>
+            <label><input type="checkbox" value="Magnum" />Magnum</label>
+            <label><input type="checkbox" value="Cornetto" />Cornetto</label>
+            <label><input type="checkbox" value="Bravo" />Bravo</label>
+            <label><input type="checkbox" value="Algida" />Algida</label>
         </div>
         <div>
-            <label for="others">
-                <textarea id="others" />
+            <label for="others">Extra
+                <textarea id="others" type="checkbox" rows="3" cols="30" placeholder="Add comment:)"></textarea>
             </label>
+        </div>
+        <div>]
+            <input id="submit" type="submit" button value="submit" descendant="survey-form" />
         </div>
 
     </form>
