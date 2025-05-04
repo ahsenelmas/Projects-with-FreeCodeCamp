@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#navbar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 1rem;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+}
+
+#main-doc {
+    margin-left: 260px;
+    padding: 1rem;
+}
+
+header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
